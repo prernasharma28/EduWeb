@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant Chatbox</title>
+    <style>
+        body {
+            background: linear-gradient(to right,goldenrod,white);
+            background-repeat: repeat;
+        }
+        #chatbox {
+            width: 450px;
+            height: 640px;
+            border: #000;
+            padding: 10px;
+            overflow: auto;
+            background-color: rgb(225, 231, 219);
+        }
+
+        #userInput {
+            background-color:rgb(225, 231, 219);
+            width: 410px;
+            height: 40px;
+            border:  #000;
+            margin-top: 5px;  
+        }
+
+        #chatbox p {
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .message-user {
+            align-self: flex-end;
+            background-color: #39b03d;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        .message-ai {
+            align-self: flex-start;
+            background-color: #0079fae5;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            background-color: #0f6e0e;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0abd16;
+        }
+        #chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbox">
+        <p class="message-user">Hey!</p>
+        <p class="message-ai">Education is a critical factor for the progress of an individual and the nation. It is about gathering knowledge and learning how to think and apply the knowledge to solve problems.                    </p>
+    </p>
+    </div>
+    <input id="userInput" type="text" placeholder="Type your message here...">
+    <button onclick="addUserMessage(), scrollDown()">Send</button>
+    <img id="chatbot-icon" src="chatbot.png" alt="Chatbot Icon">
+
+    <script>
+        function addUserMessage() {
+            const userInput = document.getElementById("userInput");
+            const chatbox = document.getElementById("chatbox");
+            chatbox.innerHTML += `<p class="message-user">User: ${userInput.value}</p>`;
+            userInput.value = "";
+            getAIResponse();
+        }
+
+        function getAIResponse() {
+            // Simulate server latency
+            setTimeout(() => {
+                const chatbox = document.getElementById("chatbox");
+                chatbox.innerHTML += `<p class="message-ai">I'm an AI assistant. However, I can provide guidance on how to choose your courses. You can use various EduWeb and which provide various different courses </p>`;
+            }, 1000);
+        }
+
+        function scrollDown() {
+            const chatbox = document.getElementById("chatbox");
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+    </script>
+</body>
+</html> 

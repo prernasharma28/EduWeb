@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="University.css">
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="c_slide.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preload" as="image" href="hero-bg.svg">
+    <link rel="preload" as="image" href="hero-banner-1.jpg">
+    <link rel="preload" as="image" href="hero-banner-2.jpg">
+    <link rel="preload" as="image" href="hero-shape-1.svg">
+    <link rel="preload" as="image" href="hero-shape-2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .card{
+            padding:0;
+            box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+        }
+        
+      @media (min-width: 576px) {
+        .carousel-control-next, .carousel-control-prev {
+          display: block; /* Show the arrows on screens larger than 576px */
+          width: 5%; /* Adjust the width of the arrows */
+        }
+}      
+
+    </style>
+</head>
+
+<body id="top">
+    <!-- Header -->
+    <header class="header " data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.svg" width="162" height="50" alt="Eduweb logo">
+            </a>
+            <nav class="navbar active" data-navbar>
+                <div class="wrapper">
+                    <a href="#" class="logo">
+                        <img src="logo.svg" width="162" height="50" alt="Eduweb logo">
+                    </a>
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="http://127.0.0.1:5501/University.html#home#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="University.html#abt" class="navbar-link" data-nav-link>About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="University.html#cor" class="navbar-link" data-nav-link>Courses</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="University.html#blg" class="navbar-link" data-nav-link>Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="University.html#contact" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="header-action-btn" aria-label="toggle search" title="Search">
+                    <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="header-action-btn" aria-label="cart" title="Cart">
+                    <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+                    <span class="btn-badge">0</span>
+                </button>
+                <a href="Course.html#eofc" class="btn has-before">
+                    <span class="span">Try for free</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+                <button class="header-action-btn" aria-label="open menu" data-nav-toggler></button>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+
+            </div>
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+
+    </header>
+    <br><br><br>
+
+
+    <!-- Image -->
+   <div class="banner-card">
+     <img src="course.jpg">
+    <div class="banner-text">
+        <h4>
+            Learn today’s most in-demand <br>skills with our free online courses
+        </h4>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg"><a href="Course.html#eofc" >Explore Free Courses</a></button>    
+    </div>
+   </div>
+
+
+   <!-- comapny logo --><br><br>
+   <h4 class="text">Employees from leading companies worldwide have enrolled with us.</h4>
+    <div class="box">
+        <div class="box2">
+            <img src="company-sprite-d (1).avif" class="company">
+        </div>
+    </div><br>
+
+
+    <!-- Certificate -->
+    <div class="certificate">
+        <div class="cert1">
+            <img src="cert.jpeg" width="570" height="800" >
+        </div>
+        <div clas="cert2" >
+            <h2 style="text-align: center; color:black;"> Courses focused on building strong foundational skills 
+            for career growth!</h2><br>
+            <ul class="text">
+                <li>&#x2705;Learn from Industry Experts</li>
+                <li>&#x2705;Free Resources </li>
+                <li>&#x2705;Skill-based Learning</li>
+                <li>&#x2705;Learn Anytime, Anywhere</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <!-- slider -->
+    <br id="eofc">
+    <p class="heading"><a href="#Explore our free courses">Explore our free courses</a></p><br>
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <div class="card-wrapper container-sm d-flex  justify-content-around">
+    <div class="card  " style="width: 18rem;">
+<img src="img1.avif" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">AWS Cloud Practitioner Essential</h5>
+  <p>Explore AWS Cloud Practitioner Essentials in this comprehensive course powered by AWS. Gain insights into the client-server model, different cloud computing models, and key AWS services.</p>
+  
+</div>
+</div><div class="card" style="width: 18rem;">
+<img src="img2.avif" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">PostgreSQL Fundamentals</h5>
+  <p>Discover the essentials of AWS PostgreSQL in this AWS powered course. Learn how to optimize queries and enhance database performance.</p>
+  
+</div>
+      </div>
+      <div class="card" style="width: 18rem;">
+<img src="img3.avif" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Introduction to AWS IoT</h5>
+  <p>Embark on your journey into AWS IoT with this AWS-powered course, where you'll uncover its fundamental principles and operations.</p>
+  
+</div>
+</div>
+</div>
+  </div>
+  <div class="carousel-item">
+    <div class="card-wrapper container-sm d-flex   justify-content-around">
+    <div class="card  " style="width: 18rem;">
+<img src="img4.avif" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Introduction to Amazon Kinesis Analytics</h5>
+  <p>The Amazon Kinesis Data Analytics course is specifically designed for individuals who want to learn to collect and process streamlining data in real time using it.</p>
+</div>
+</div><div class="card" style="width: 18rem;">
+<img src="img5.avif" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Duet AI in Google Meet</h5>
+  <p>The Duet AI Google Meet Course powered by Google Cloud is designed to equip participants with the revolutionary power of AI-enhanced engagement, take an immersive journey.</p>
+</div>
+      </div>
+      <div class="card" style="width: 18rem;">
+<img src="img6.avif" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Duet AI in Google Slides</h5>
+  <p>Dіscovеr the transformational power of Duet AI in this free Duet AI Google slides course, which is aimed at providing you with essential skills. </p>
+  
+</div>
+</div>
+  </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card-wrapper container-sm d-flex  justify-content-around">
+    <div class="card " style="width: 18rem;">
+<img src="img7.avif" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Duet AI in Gmail</h5>
+  <p>Duet AI in Gmail is a comprehensive course through which learners can enhance their productivity using the various features of Google's Duet AI within Gmail.</p>
+  
+</div>
+</div>
+      <div class="card" style="width: 18rem;">
+<img src="img8.avif" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Introduction to Duet AI in Google Workspace</h5>
+  <p>Being ahead of the technology trend has become essential in a modern, constantly evolving market. Most recent developments is the integration of Duet AI in Google Workspace.</p>
+  
+</div>
+      </div>
+      <div class="card" style="width: 18rem;">
+<img src="img9.jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Getting Started with AWS Systems Manager</h5>
+  <p>Embark on an insightful journey on AWS System Manager with this comprehensive course. Gain a clear understanding of its functionalities, architecture. </p>
+  
+</div>
+</div>
+
+
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div><br>
+  <!-- <div class="qr">
+      <div>
+        <img src="qrcode_chrome.png">
+      </div>
+  </div> -->
+  <!-- Explore free courses -->
+  <p class="heading" id="efoc">Explore Free Online Courses</p>
+  <div class="container2">
+    <div class="card__container">
+       <article class="card__article">
+          <img src="slide1.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Learn the Fundamentals of Business Analytics</span>
+             <h2 class="card__title">Business Analytics with Excel</h2>
+             <a href="https://www.simplilearn.com/learn-business-analytics-excel-fundamentals-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Business%20Analytics%20with%20Excel" class="card__button">Read More</a>
+          </div>
+       </article>
+
+       <article class="card__article">
+          <img src="slide2.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Free Applied Data Science with Python Course</span>
+             <h2 class="card__title">Applied Data Science with Python</h2>
+             <a href="https://www.simplilearn.com/getting-started-data-science-with-python-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Applied%20Data%20Science%20with%20Python" class="card__button">Read More</a>
+          </div>
+       </article>
+
+       <article class="card__article">
+          <img src="slide3.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Free Data Analytics Course</span>
+             <h2 class="card__title">Introduction to Data Analytics Course</h2>
+             <a href="https://www.simplilearn.com/learn-data-analytics-for-beginners-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Introduction%20to%20Data%20Analytics%20Course" class="card__button">Read More</a>
+          </div>
+       </article>
+
+
+       <article class="card__article">
+          <img src="slide4.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Free Data Science Course</span>
+             <h2 class="card__title">Introduction to Data Science</h2>
+             <a href="https://www.simplilearn.com/data-science-free-course-for-beginners-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Introduction%20to%20Data%20Science" class="card__button">Read More</a>
+          </div>
+       </article>
+
+       <article class="card__article">
+          <img src="slide5.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Free Online Excel Course</span>
+             <h2 class="card__title">Introduction to MS Excel</h2>
+             <a href="https://www.simplilearn.com/learn-ms-excel-free-training-course-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Introduction%20to%20MS%20Excel" class="card__button">Read More</a>
+          </div>
+       </article>
+
+       <article class="card__article">
+          <img src="slide6.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Free Course to Learn Python Libraries</span>
+             <h2 class="card__title">Python Libraries for Data Science</h2>
+             <a href="https://www.simplilearn.com/learn-python-libraries-free-course-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Python%20Libraries%20for%20Data%20Science" class="card__button">Read More</a>
+          </div>
+       </article>
+
+       <article class="card__article">
+          <img src="slide7.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Cyber Security Online Course</span>
+             <h2 class="card__title">Introduction to Cyber Security</h2>
+             <a href="https://www.simplilearn.com/learn-cyber-security-basics-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Introduction%20to%20Cyber%20Security" class="card__button">Read More</a>
+          </div>
+       </article>
+       <article class="card__article">
+          <img src="slide8.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Free Ethical Hacking Course for Beginners</span>
+             <h2 class="card__title">Basics of Ethical Hacking</h2>
+             <a href="https://www.simplilearn.com/ethical-hacking-course-free-beginners-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Basics%20of%20Ethical%20Hacking" class="card__button">Read More</a>
+          </div>
+       </article>
+       <article class="card__article">
+          <img src="slide9.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Free Machine Learning Course</span>
+             <h2 class="card__title">Machine Learning</h2>
+             <a href="https://www.simplilearn.com/learn-machine-learning-basics-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Machine%20Learning" class="card__button">Read More</a>
+          </div>
+       </article>
+       <article class="card__article">
+          <img src="slide10.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Free ChatGPT Course with Certificate</span>
+             <h2 class="card__title">ChatGPT 101: What is ChatGPT?</h2>
+             <a href="https://www.simplilearn.com/free-chatgpt-basics-course-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=ChatGPT%20101:%20What%20is%20ChatGPT?" class="card__button">Read More</a>
+          </div>
+       </article>
+
+       <article class="card__article">
+          <img src="slide11.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Duet AI in Gmail Course: Enhancing Email Productivity</span>
+             <h2 class="card__title">Duet AI in Gmail</h2>
+             <a href="https://www.simplilearn.com/free-duet-ai-in-gmail-course-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Duet%20AI%20in%20Gmail" class="card__button">Read More</a>
+          </div>
+       </article>
+
+       <article class="card__article">
+          <img src="slide12.jpeg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description">Getting Started with Android App Development</span>
+             <h2 class="card__title">Introduction to Android Studio Course</h2>
+             <a href="https://www.simplilearn.com/free-android-app-development-course-skillup?utm_source=SkillUp_HomePage&utm_medium=explore_free_courses&utm_campaign=Introduction%20to%20Android%20Studio%20Course" class="card__button">Read More</a>
+          </div>
+       </article>
+
+    </div>
+ </div><br><br><br><br><br><br><br><br><br><br><br>
+ <!-- Reviews -->
+ <link rel="stylesheet" href="footer.css">
+ <section>
+  <div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+          </div>
+          </div>
+                <div class="col-md-6 item text">
+                  <!-- <h3>Company Name</h3> -->
+              </div>
+              <div class="col item social">
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-snapchat"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              </div>
+    </footer>
+  </div>
+</section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

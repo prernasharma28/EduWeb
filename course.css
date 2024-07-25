@@ -1,0 +1,68 @@
+.banner-card{
+    position:relative;
+}
+.banner-card img{
+    width:100%;
+    height:auto;
+}
+.banner-text{
+   position:absolute;
+   top:25%;
+   /* color:#fff; */
+   color:#050508;
+   padding:10px;
+}
+.banner-text h4{
+   font-size:40px;
+   text-transform:uppercase ;
+   font-weight:bold ;
+   margin-bottom: 5px;
+ }
+ .btn btn-primary btn-lg{
+    color:#32e3daf0;
+    font-size: 22px;
+ }
+ .text{
+    text-align: center;
+    font-size: 30px;
+ }
+ .box{
+    margin-top:30px;
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .certificate,.qr{
+    padding:40px;
+    height:500px;
+    width:100%;
+    background-color:hwb(350 76% 0%);
+ }
+ .company{
+    background-repeat: no-repeat;
+    height:40px;
+    width:100%;
+ }
+ .cert1 img{
+   border:8px solid white;
+   border-radius: 8px;
+   display:block;
+   float:left;
+ }
+ .cert2 .text {
+   font-weight: 900px;
+ }
+ h2{
+   color:hsl(0, 12%, 24%);
+ }
+li{
+   color:black;
+   list-style: none;
+}
+.heading{
+   text-align: center;
+   color:black;
+   font-size: 56px;
+}

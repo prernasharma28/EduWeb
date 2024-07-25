@@ -1,0 +1,74 @@
+
+    /* Footer */
+    .footer-dark {
+        padding: 50px 0;
+        color: #f0f9ff;
+        background-color: #282d32;
+        font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    }
+
+    .footer-dark .row{
+      display:flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    .footer-dark h3 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-size: 18px; /* Increased font size for better visibility */
+    }
+
+    .footer-dark ul {
+        padding: 0;
+        list-style: none;
+        line-height: 1.8; /* Increased line height for better readability */
+        font-size: 16px; /* Increased font size for better readability */
+        margin-bottom: 0;
+    }
+
+    .footer-dark ul a {
+        color: #fff; /* Change link color to white */
+        text-decoration: none;
+        opacity: 0.8; /* Reduced opacity for better contrast */
+    }
+
+    .footer-dark ul a:hover {
+        opacity: 1; /* Increased opacity on hover */
+    }
+
+    .footer-dark .item.text p {
+        opacity: 0.8; /* Reduced opacity for better contrast */
+    }
+
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px; /* Increased margin top for better spacing */
+    }
+
+    .footer-dark .item.social > a {
+        font-size: 33px; /* Increased font size for better visibility */
+        padding:3px;
+        width: 40px; /* Increased icon size */
+        height: 40px; /* Increased icon size */
+        line-height: 40px; /* Increased line height for better centering */
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+        margin: 0 10px; /* Reduced margin for better spacing */
+        color: #fff;
+        opacity: 0.8; /* Reduced opacity for better contrast */
+    }
+
+    .footer-dark .item.social > a:hover {
+        opacity: 1; /* Increased opacity on hover */
+    }
+
+    .footer-dark .copyright {
+        text-align: center;
+        padding-top: 24px;
+        opacity: 0.6; /* Reduced opacity for better contrast */
+        font-size: 14px; /* Reduced font size for better readability */
+        margin-bottom: 0;
+    }

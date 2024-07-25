@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Cart.css">
+        <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <p class="logo">LOGO</p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                    <br><br><br>
+                </div>
+                    <button id="paymentButton">Make Payment</button><br><br>
+            </div>
+        </div>
+        <div class="success-message" id="successMessage">
+            <i class="fas fa-check-circle"></i> 
+            <h1>Payment Successful!</h1>
+            <p>Thank you for your purchase.</p>
+        </div>
+
+        <script src="Bill.js"></script>
+        <script src="Cart.js"></script>
+    </body>
+</html>
